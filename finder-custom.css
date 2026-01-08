@@ -4,4 +4,87 @@
    Font: Baskerville
    ================================ */
 
+/* =====================================================
+   VTInfo Finder – Brand Color Overrides
+   Brand: Gold (#C9A86A) / Black
+   Scope: Colors only (safe baseline)
+   ===================================================== */
+
+/* ---------- GLOBAL TEXT ---------- */
+html, body {
+  color: #111 !important;
+  background-color: #fff !important;
+}
+
+/* ---------- LINKS ---------- */
+a,
+a:visited {
+  color: #C9A86A !important;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.85;
+}
+
+/* ---------- PRIMARY BUTTONS ---------- */
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: #C9A86A !important;
+  border-color: #C9A86A !important;
+  color: #000 !important;
+}
+
+/* Hover states */
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  filter: brightness(1.05);
+}
+
+/* ---------- SECONDARY / OUTLINE BUTTONS ---------- */
+button.secondary,
+button.outline,
+.btn-secondary,
+.btn-outline {
+  background-color: transparent !important;
+  border: 1px solid #C9A86A !important;
+  color: #000 !important;
+}
+
+/* ---------- FORM INPUTS ---------- */
+input[type="text"],
+input[type="search"],
+select {
+  border-color: rgba(0,0,0,.25) !important;
+  color: #111 !important;
+}
+
+input::placeholder {
+  color: rgba(0,0,0,.5);
+}
+
+/* ---------- ACTIVE / FOCUS STATES ---------- */
+input:focus,
+select:focus,
+button:focus {
+  outline: none !important;
+  border-color: #C9A86A !important;
+  box-shadow: 0 0 0 2px rgba(201,168,106,.25) !important;
+}
+
+/* ---------- RESULTS / HIGHLIGHTS ---------- */
+.active,
+.selected,
+.highlight {
+  background-color: rgba(201,168,106,.15) !important;
+}
+
+/* ---------- MAP MARKERS (non-destructive guess) ---------- */
+svg path[fill],
+svg circle[fill] {
+  fill: #C9A86A !important;
+}
+
 
